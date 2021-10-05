@@ -27,6 +27,7 @@ public class $01_그룹_단어_체커_1316_실버5 {
 		
 		return status;
 	}
+	
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
