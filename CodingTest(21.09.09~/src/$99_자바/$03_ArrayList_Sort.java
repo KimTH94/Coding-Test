@@ -9,7 +9,6 @@ public class $03_ArrayList_Sort {
 	public static void main(String[] args) {
 		
 		ArrayList<String> list = new ArrayList<String>();
-
 		list.add("A");
 		list.add("b");
 		list.add("a");
