@@ -15,7 +15,7 @@ public class $03_ArrayList_Sort {
 		list.add("C");
 		list.add("e");
 		
-		System.out.println(list);	// [2, 1, 5, 4, 3]
+		System.out.println(list);	// [2, 1, 5, 4, 3]111
 		
 		Collections.sort(list);
 		System.out.println(list);	// [1, 2, 3, 4, 5]
