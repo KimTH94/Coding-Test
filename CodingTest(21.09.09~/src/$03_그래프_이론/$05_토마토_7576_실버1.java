@@ -84,5 +84,6 @@ public class $05_토마토_7576_실버1 {
 		}
 		
 		sc.close();
+
 	}
 }
