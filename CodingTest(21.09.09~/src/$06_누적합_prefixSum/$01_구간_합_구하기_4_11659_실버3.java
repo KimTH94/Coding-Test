@@ -24,7 +24,6 @@ public class $01_구간_합_구하기_4_11659_실버3 {
 			int start = sc.nextInt();
 			int end   = sc.nextInt();
 			
-			//
 			System.out.println(sumArr[end] - sumArr[start - 1]);
 		}
 		sc.close();
