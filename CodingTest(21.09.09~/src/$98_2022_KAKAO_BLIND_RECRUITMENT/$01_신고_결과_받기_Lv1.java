@@ -2,7 +2,7 @@ package $98_2022_KAKAO_BLIND_RECRUITMENT;
 
 import java.util.*;
 
-public class $01_신고_결과_받기_LV1 {
+public class $01_신고_결과_받기_Lv1 {
 
 	public int[] solution(String[] id_list, String[] report, int k) {
 		int[] answer = {};

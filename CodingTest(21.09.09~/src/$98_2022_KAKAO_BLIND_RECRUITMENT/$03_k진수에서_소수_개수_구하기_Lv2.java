@@ -1,6 +1,6 @@
 package $98_2022_KAKAO_BLIND_RECRUITMENT;
 
-public class $03_k진수에서_소수_개수_구하기_LV2 {
+public class $03_k진수에서_소수_개수_구하기_Lv2 {
 
 	public String getBinary(int n, int base) {
         String answer = "";

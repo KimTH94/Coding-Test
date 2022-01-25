@@ -15,7 +15,7 @@ class Car {
     }
 }
 
-public class $02_주차_요금_계산_LV2 {
+public class $02_주차_요금_계산_Lv2 {
 
 	public int getUseTime(String inTime, String outTime) {
         int[] answer = {};

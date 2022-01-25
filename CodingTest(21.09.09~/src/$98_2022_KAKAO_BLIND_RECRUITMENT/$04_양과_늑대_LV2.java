@@ -9,18 +9,44 @@ public class $04_양과_늑대_LV2 {
 	
 	public static void DFS(int index, int wolf, int sheep, ArrayList<Integer> list, int[] info) {
 		if(info[index] == 0) {
-			wolf++;
-		} else {
 			sheep++;
+		} else {
+			wolf++;
 		}
 		
-		MAX = Math.max(MAX, sheep);
-		
-		//ArrayList<Integer> tempList = map.get(key)
+		System.out.println(index + " ==> " + wolf + " / " + sheep);
 		if(wolf >= sheep) {
 			return;
 		}
 		
+		MAX = Math.max(MAX, sheep);
+		
+		ArrayList<Integer> next = new ArrayList<Integer>();
+		next.addAll(list);
+		
+//		for(int i = 0 ; i < next.size() ; i++) {
+//			System.out.print(next.get(i) + " ");
+//		}
+//		System.out.println("=============");
+		
+		if(map.containsKey(index)) {
+			next.addAll(map.get(index));
+		}
+		
+//		for(int i = 0 ; i < next.size() ; i++) {
+//			System.out.print(next.get(i) + " ");
+//		}
+//		System.out.println("=============");
+		
+		next.remove(index);
+		
+		for(int n : next) {
+			System.out.println("n : " + n);
+			//DFS(n, wolf, sheep, next, info);
+			
+		}
+		
+		return;
 	}
 	
 	public static int solution(int[] info, int[][] edges) {
@@ -33,13 +59,13 @@ public class $04_양과_늑대_LV2 {
         	map.get(edges[i][0]).add(edges[i][1]);
         }
         
-        for(int key : map.keySet()) {
-        	System.out.println("key :" + key + " / size : " + map.get(key).size());
-        	for(int i = 0 ; i < map.get(key).size() ; i++) {
-        		System.out.println(map.get(key).get(i));
-        	}
-        	System.out.println("=======");
-        }
+//        for(int key : map.keySet()) {
+//        	System.out.println("key :" + key + " / size : " + map.get(key).size());
+//        	for(int i = 0 ; i < map.get(key).size() ; i++) {
+//        		System.out.println(map.get(key).get(i));
+//        	}
+//        	System.out.println("=======");
+//        }
         
         int sheep = 0;
         int wolf = 0;
