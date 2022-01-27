@@ -26,7 +26,7 @@ public class $04_양과_늑대_LV2 {
 		
 //		for(int i = 0 ; i < next.size() ; i++) {
 //			System.out.print(next.get(i) + " ");
-//		}
+//		}ㅁㅇㄹㄴㅁㅇ
 //		System.out.println("=============");
 		
 		if(map.containsKey(index)) {
