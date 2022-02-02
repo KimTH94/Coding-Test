@@ -14,7 +14,6 @@ public class $04_양과_늑대_LV2 {
 			wolf++;
 		}
 		
-		System.out.println(index + " ==> " + wolf + " / " + sheep);
 		if(wolf >= sheep) {
 			return;
 		}
@@ -23,27 +22,16 @@ public class $04_양과_늑대_LV2 {
 		
 		ArrayList<Integer> next = new ArrayList<Integer>();
 		next.addAll(list);
-		
-//		for(int i = 0 ; i < next.size() ; i++) {
-//			System.out.print(next.get(i) + " ");
-//		}ㅁㅇㄹㄴㅁㅇ
-//		System.out.println("=============");
+
 		
 		if(map.containsKey(index)) {
 			next.addAll(map.get(index));
 		}
 		
-//		for(int i = 0 ; i < next.size() ; i++) {
-//			System.out.print(next.get(i) + " ");
-//		}
-//		System.out.println("=============");
-		
-		next.remove(index);
+		next.remove((Integer) index);
 		
 		for(int n : next) {
-			System.out.println("n : " + n);
-			//DFS(n, wolf, sheep, next, info);
-			
+			DFS(n, wolf, sheep, next, info);
 		}
 		
 		return;
@@ -59,22 +47,12 @@ public class $04_양과_늑대_LV2 {
         	map.get(edges[i][0]).add(edges[i][1]);
         }
         
-//        for(int key : map.keySet()) {
-//        	System.out.println("key :" + key + " / size : " + map.get(key).size());
-//        	for(int i = 0 ; i < map.get(key).size() ; i++) {
-//        		System.out.println(map.get(key).get(i));
-//        	}
-//        	System.out.println("=======");
-//        }
-        
         int sheep = 0;
         int wolf = 0;
         
         ArrayList<Integer> list = new ArrayList<Integer>();
         list.add(0);
-        System.out.println("0. wolf : " + wolf + " / sheep : " + sheep);
         DFS(0, wolf, sheep, list, info);
-        System.out.println("1. wolf : " + wolf + " / sheep : " + sheep);
         
         return answer;
     }
@@ -91,6 +69,6 @@ public class $04_양과_늑대_LV2 {
 				
 		solution(info1, edges1);
 		
-		//solution(info2 edges2);
+		solution(info2, edges2);
 	}
 }
