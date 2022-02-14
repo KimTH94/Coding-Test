@@ -31,5 +31,6 @@ public class $09_계단_오르기_2579_실버3 {
 		System.out.println(DP[n]);
 		
 		sc.close();
+		
 	}
 }
