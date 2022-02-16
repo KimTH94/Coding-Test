@@ -24,6 +24,7 @@ public class $11_파도반_수열_9461_실버3 {
 		
 		for(int i = 0 ; i < num ; i++) {
 			int N = sc.nextInt() - 1;
+			
 			System.out.println(list.get(N));
 		}
 
