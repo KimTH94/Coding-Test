@@ -11,8 +11,9 @@ public class $04_Å×½ºÆ® {
 		int N = sc.nextInt();
 		
 		for(int i = 0 ; i < N ; i++) {
-			
+			System.out.println("Ä¿¹Ô");
 		}
+		
 		sc.close();
 	}
 }
