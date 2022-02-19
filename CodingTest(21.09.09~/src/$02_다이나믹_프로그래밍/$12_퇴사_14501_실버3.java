@@ -26,7 +26,7 @@ public class $12_퇴사_14501_실버3 {
             DP[i + 1] = Math.max(DP[i + 1], DP[i]);
 		}
 
-		System.out.println(DP[N]);	//
+		System.out.println(DP[N]);
 		
 		sc.close();
 	}
