@@ -40,6 +40,7 @@ public class $17_수열_2491_실버3 {
 		
 		System.out.println(max);
 		
+		
 		sc.close();
 	}
 }
