@@ -52,6 +52,7 @@ public class $06_숨바꼭질_1697_실버1 {
 		
 		System.out.println(dist[K]);
 
+		
 		sc.close();
 	}
 }
