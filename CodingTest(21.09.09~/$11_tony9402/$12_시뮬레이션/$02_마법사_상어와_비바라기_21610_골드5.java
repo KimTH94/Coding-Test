@@ -18,6 +18,14 @@ public class $02_마법사_상어와_비바라기_21610_골드5 {
 		
 		map = new int[N + 1][N + 1];
 		
+		for(int i = 1 ; i < map.length ; i++) {
+			for(int j = 1 ; j < map[i].length ; j++) {
+				map[i][j] = sc.nextInt();
+			}
+		}
+		
+		for(int i = 0 ; i < M  ;)
+		
 		printMap();
 		
 		sc.close();
