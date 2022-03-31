@@ -115,7 +115,7 @@ public class $03_미세먼지_안녕_17144 {
 		System.out.println(airCleaner); 
 		
 		for(int i = 0 ; i < C ; i++) {
-			
+			System.out.println(map[i]);
 		}
 	}
 		  
