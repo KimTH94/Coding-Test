@@ -2,7 +2,7 @@ package $09_그래프_탐색;
 
 import java.util.*;
 
-public class $02_DFS와BFS_1260_실버2 {
+public class $01_DFS와BFS_1260_실버2 {
 	public static int[][] map;
 	public static boolean[] check;
 	public static StringBuilder sbDFS = new StringBuilder();

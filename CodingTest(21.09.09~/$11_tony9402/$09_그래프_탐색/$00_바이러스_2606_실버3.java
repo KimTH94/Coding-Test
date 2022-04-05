@@ -2,7 +2,7 @@ package $09_그래프_탐색;
 
 import java.util.*;
 
-public class $01_바이러스_2606_실버3 {
+public class $00_바이러스_2606_실버3 {
 	public static int[][] map;
 	public static boolean[] check;
 	  

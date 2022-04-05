@@ -31,7 +31,6 @@ public class $01_트리의_부모_찾기_성공_11725_실버2 {
 		boolean[] check = new boolean[N + 1];
 		
 		Queue<Integer> q = new LinkedList<Integer>();
-		
 		q.add(1);
 		check[1] = true;
 		
